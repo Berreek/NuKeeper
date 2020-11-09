@@ -3,13 +3,13 @@
   <PropertyGroup>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <LangVersion>latest</LangVersion>
-    <VersionPrefix>$(NugetVersion)</VersionPrefix>
-    <PackageVersion>$(NugetVersion)</PackageVersion>
+    <VersionPrefix>0.5.0-spotio</VersionPrefix>
+    <PackageVersion>0.5.0-spotio</PackageVersion>
     <Copyright>Copyright (c) NuKeeper 2017-$([System.DateTime]::Now.ToString(yyyy))</Copyright>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <PackageProjectUrl>https://github.com/NuKeeperDotNet/NuKeeper/</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/NuKeeperDotNet/NuKeeper/master/assets/icon.png</PackageIconUrl>
+<!--    <PackageIconUrl>https://raw.githubusercontent.com/NuKeeperDotNet/NuKeeper/master/assets/icon.png</PackageIconUrl>-->
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>NuGet;Package;Update</PackageTags>
     <RepositoryType>git</RepositoryType>
