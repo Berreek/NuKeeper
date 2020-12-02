@@ -44,8 +44,13 @@ namespace NuKeeper.Update.ProcessRunner
                 throw new NuKeeperException($"Could not start external process for {command}");
             }
 
-            var textOut = await process.StandardOutput.ReadToEndAsync();
-            var errorOut = await process.StandardError.ReadToEndAsync();
+            var outputs = await Task.WhenAll(
+                process.StandardOutput.ReadToEndAsync(),
+                process.StandardError.ReadToEndAsync()
+            );
+
+            var textOut = outputs[0];
+            var errorOut = outputs[1];
 
             process.WaitForExit();
 
